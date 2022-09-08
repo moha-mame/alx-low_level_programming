@@ -1,12 +1,10 @@
 #include <stdio.h>
 /**
- *  * main - Entry point
- *   *
- *    * Return: Always 0 (Success)
- *     */
+ *  main - Entry point 
+ * Return: Always 0 (Success)
+ */
 int main(void)
 { 
-
          printf("    short int is %2d bytes \n", sizeof(short int));
          printf("          int is %2d bytes \n", sizeof(int));
          printf("        int * is %2d bytes \n", sizeof(int *));
@@ -26,6 +24,5 @@ int main(void)
 	 printf("       char * is %2d bytes \n", sizeof(char *));
          printf("unsigned char is %2d bytes \n", sizeof(unsigned char));
 			
-
 return (0);
 }
