@@ -11,14 +11,14 @@ int main(void)
 {
 	int i = 48;
 	int com = 44;
-	int spc = 32;
+	int sp = 32;
 
 	for ( ; i <= 57; i++)
 	{
 		putchar(i);
 		{
 			putchar(com);
-			putchar(spc);
+			putchar(sp);
 		}
 	}
 	putchar('\n');
