@@ -16,6 +16,7 @@ int main(void)
 	for ( ; i <= 57; i++)
 	{
 		putchar(i);
+		if (i != 57)
 		{
 			putchar(com);
 			putchar(sp);
