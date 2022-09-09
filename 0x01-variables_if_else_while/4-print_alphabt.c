@@ -22,5 +22,6 @@ int main(void)
 			lwc += 1;
 		}
 	}
+	putchar('\n');
 	return (0);
 }
