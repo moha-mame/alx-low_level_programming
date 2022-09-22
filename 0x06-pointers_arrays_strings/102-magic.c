@@ -1,8 +1,4 @@
 #include <stdio.h>
-/**
-*main - magic number 98
-*
-*/
 int main(void)
 {
 	int n;
