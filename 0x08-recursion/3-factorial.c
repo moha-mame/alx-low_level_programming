@@ -3,8 +3,8 @@
 /**
  * factorial - factorial n
  * @n: integer arams
- * Return: factorial 
- */
+ * Return: factorial
+*/
 
 int factorial(int n)
 {
