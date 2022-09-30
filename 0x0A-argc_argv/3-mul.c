@@ -12,13 +12,14 @@ int main(int argc, char *argv[])
 {
 	int i = atoi(argv[1]);
 	int j = atoi(argv[2]);
-	int prod = i * j;
+	int prod;
 
 	if (argc <= 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
+	prod = i * j;
 	printf("%d\n", prod);
 
 	return (0);
