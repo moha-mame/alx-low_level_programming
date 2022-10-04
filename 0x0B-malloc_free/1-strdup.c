@@ -3,17 +3,26 @@
 #include <string.h>
 /**
 *_strdup - the string given as a parameter.
-*@src: - string
+*@srt: - string
 *Return: - string
 */
-char *_strdup(char *src)
+char *_strdup(char *str)
 {
-	char *dest = malloc((1 + strlen(src)) * sizeof(char));
-	char *toReturn = dest;
+     char* copy = NULL;
+ 
+     if(str)
+     {
+         size_t len = strlen(str) + 1;
+ 
+         if((copy = malloc(len)) == NULL)
+         {
+             return (NULL);
+         }
+ 
+         memcpy(copy, str, len);
+     }
+ 
+     return (copy);
+ }
 
-	while (*src)
-	{
-	*dest++ = *src++;
-	}
-	return (toReturn);
-}
+
