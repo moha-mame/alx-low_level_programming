@@ -2,10 +2,19 @@
 #include <stdlib.h>
 #include <string.h>
 
+
+/**
+* main - main function
+* @argc: chala chube chebte
+* @argv: - abebe bso bela
+* Return: 0
+*/
+
 int main(int argc, char *argv[])
 {
-unsigned long mul;
-int num1, num2;
+	unsigned long mul;
+	int num1, num2;
+
 	if (argc <= 2)
 	{ printf("Error\n");
 	exit(98); }
@@ -19,7 +28,6 @@ int num1, num2;
 		}
 
 	}
-	/*converts the string argument str to a long integer*/
 	mul = atol(argv[1]) *  atol(argv[2]);
 	printf("%lu\n", mul);
 return (0);
