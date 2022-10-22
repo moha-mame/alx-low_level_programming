@@ -1,17 +1,17 @@
-global    _start
+section .data
+	fmt db	"%s", 10, 0
+	msg db	"Hello, Holberton", 0
 
-       section .data
-hello:
-       db "Hello, Holberton", 15
+	section .text
+	extern printf
+	global main
 
-       section   .text
-_start:
-       mov       rax, 1
-       mov       rdi, 1
-       mov       rsi, hello
-       mov       rdx, 13
-       syscall
-       mov       rax, 60
-       xor       rdi, rdi
-       syscall
-
+main:
+	push	rbp
+	mov	rsi, msg
+	mov	rdi, fmt
+	mov	rax, 0
+	call 	printf
+	pop	rbp
+	mov	rax, 0
+	ret
