@@ -1,11 +1,13 @@
 #include "main.h"
 
 /**
- * read_textfile - reads a text file and prints it to the standard output
- * @filename: name of the file to be read
- * @letters: number of letters to read and print
- * Return: the number of letters printed
+ * create_file - creates a file and fills it with text
+ * @filename: name of the file to create
+ * @text_content: text to write in the file
+ *
+ * Return: 1 on success, -1 on failure
  */
+
 int create_file(const char *filename, char *text_content)
 {
 	int fd, len, w;
