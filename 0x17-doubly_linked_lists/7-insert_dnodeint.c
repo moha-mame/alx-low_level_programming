@@ -1,5 +1,4 @@
 #include "lists.h"
-
 /**
  * insert_dnodeint_at_index - inserts a new node at given index in the list
  * @head: pointer to head of the list
@@ -45,6 +44,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **head, unsigned int idx, int n)
 	}
 	if (tmp == NULL && count == idx)
 	{
+		
 		tmp_prev->next = new, new->prev = tmp_prev;
 		return (new);
 	}
